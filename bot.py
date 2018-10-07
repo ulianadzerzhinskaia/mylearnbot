@@ -18,6 +18,28 @@ def talk_to_me(bot, update):
     update.message.text)
     update.message.reply_text(user_text)
 
+def planet_canstellation(bot,update):
+    date = datetime.date(now).strftime('%Y/%m/%d')
+    user_text = update.message.text.split()
+    planet = ephem.user_text(date)
+    if user_text == 'Марс'
+        print(ephem.constellation(Марс))
+    elif user_text == 'Венера'
+        print(ephem.constellation(Венера))
+    elif user_text == 'Меркурий'
+        print(ephem.constellation(Меркурий))
+    elif user_text == 'Юпитер'
+        print(ephem.constellation(Юпитер))
+    elif user_text == 'Земля'
+        print(ephem.constellation(Земля))
+    elif user_text == 'Плутон'
+        print(ephem.constellation(Плутон))
+    elif user_text == 'Уран'
+        print(ephem.constellation(Уран))
+    elif user_text == 'Сатурн'
+        print(ephem.constellation(Сатурн))
+    elif user_text == 'Земля'
+        print(ephem.constellation(Земля))
 def main():
     mybot = Updater(settings.API_KEY, request_kwargs=settings.PROXY)
     print(1)
